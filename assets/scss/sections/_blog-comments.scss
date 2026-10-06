@@ -1,0 +1,211 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Blog Comments Section
+--------------------------------------------------------------*/
+.blog-comments {
+  .section-header {
+    margin-bottom: 40px;
+
+    h3 {
+      color: var(--heading-color);
+      font-size: 32px;
+      font-weight: 700;
+      font-family: var(--heading-font);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .comment-count {
+        color: color-mix(in srgb, var(--heading-color), transparent 40%);
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .comments-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .comment-card {
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 4px solid transparent;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-left-color: var(--accent-color);
+      transform: translateX(5px);
+    }
+
+    // Reply styling
+    &.reply {
+      margin-left: 48px;
+      border-left-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+      background-color: color-mix(in srgb, var(--surface-color), transparent 3%);
+
+      @media (min-width: 768px) {
+        margin-left: 85px;
+      }
+    }
+  }
+
+  .reply-thread {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .comment-header {
+    margin-bottom: 20px;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+      }
+
+      .meta {
+        .name {
+          color: var(--heading-color);
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0 0 5px;
+        }
+
+        .date {
+          color: color-mix(in srgb, var(--default-color), transparent 45%);
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .comment-content {
+    p {
+      color: var(--default-color);
+      font-size: 15px;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+  }
+
+  .comment-actions {
+    display: flex;
+    gap: 20px;
+
+    .action-btn {
+      background: none;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: color-mix(in srgb, var(--default-color), transparent 35%);
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        color: var(--accent-color);
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+
+        &.like-btn i {
+          transform: scale(1.2);
+        }
+
+        &.reply-btn i {
+          transform: translateX(-3px);
+        }
+      }
+
+      &.like-btn.active {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .section-header {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 28px;
+
+        .comment-count {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .comment-card {
+      padding: 20px;
+
+      &.reply {
+        margin-left: 35px;
+      }
+    }
+
+    .comment-header {
+      .user-info {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .meta {
+          .name {
+            font-size: 15px;
+          }
+
+          .date {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .comment-content {
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .comment-actions {
+      .action-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}

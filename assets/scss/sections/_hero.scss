@@ -1,0 +1,615 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+
+  .hero-slider {
+    position: relative;
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .swiper-slide {
+      padding: 2rem 0;
+
+      .row {
+        min-height: 500px;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: 0;
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+        opacity: 0.7;
+        transition: all 0.3s ease;
+
+        &.swiper-pagination-bullet-active {
+          width: 30px;
+          border-radius: 5px;
+          background-color: var(--accent-color);
+          opacity: 1;
+        }
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 44px;
+      height: 44px;
+      background-color: var(--surface-color);
+      border-radius: 50%;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      top: auto;
+      bottom: 10px;
+
+      &::after {
+        font-size: 1.25rem;
+        color: var(--accent-color);
+      }
+
+      &:hover {
+        background-color: var(--accent-color);
+
+        &::after {
+          color: var(--contrast-color);
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      left: calc(50% - 60px);
+    }
+
+    .swiper-button-next {
+      right: calc(50% - 60px);
+    }
+  }
+
+  // Common styles for all slides
+  .slide-content {
+    .slide-badge {
+      display: inline-block;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+      color: var(--accent-color);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+
+      span {
+        color: var(--accent-color);
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0.25rem;
+          left: 0;
+          width: 100%;
+          height: 0.5rem;
+          background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+          z-index: -1;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+    }
+
+    .slide-cta {
+      margin-bottom: 2rem;
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border-radius: 0.375rem;
+        transition: all 0.3s ease;
+
+        &.btn-shop {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          border: none;
+
+          i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            background-color: color-mix(in srgb, var(--accent-color), #000 10%);
+
+            i {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // New Collection Slide
+  .slide-new {
+    .product-showcase {
+      padding: 1rem;
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+        .product-item {
+          background-color: var(--surface-color);
+          border-radius: 0.75rem;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+          }
+
+          .product-image {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .product-info {
+            padding: 1rem;
+            text-align: center;
+            border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+            h4 {
+              font-size: 1rem;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+            }
+
+            .price {
+              font-size: 1.125rem;
+              font-weight: 700;
+              color: var(--accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Sale Products Slide
+  .slide-sale {
+    .countdown-container {
+      margin-top: 1.5rem;
+
+      .countdown-label {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+      }
+
+      .countdown {
+        display: flex;
+        gap: 1rem;
+
+        >div {
+          background-color: var(--surface-color);
+          border-radius: 0.5rem;
+          padding: 0.75rem 1rem;
+          min-width: 70px;
+          text-align: center;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            color: var(--accent-color);
+          }
+
+          h4 {
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin: 0;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+          }
+        }
+      }
+    }
+
+    .sale-showcase {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .main-product {
+        position: relative;
+        max-width: 100%;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 1rem;
+        }
+
+        .discount-badge {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+          .percent {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1;
+          }
+
+          .text {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .floating-tag {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        background-color: var(--surface-color);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        .tag-content {
+          .tag-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+
+          .tag-price {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+
+            .old-price {
+              font-size: 1rem;
+              font-weight: 500;
+              color: color-mix(in srgb, var(--default-color), transparent 40%);
+              text-decoration: line-through;
+            }
+
+            .new-price {
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Featured Products Slide
+  .slide-featured {
+    .feature-list {
+      margin-top: 1.5rem;
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+
+        i {
+          font-size: 1.25rem;
+          color: var(--accent-color);
+        }
+
+        span {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .featured-showcase {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .featured-image {
+        position: relative;
+        max-width: 100%;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 1rem;
+        }
+
+        .featured-badge {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          border-radius: 2rem;
+          font-size: 0.875rem;
+          font-weight: 600;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+          i {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .floating-review {
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+        background-color: var(--surface-color);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 250px;
+
+        .review-stars {
+          display: flex;
+          gap: 0.25rem;
+          margin-bottom: 0.75rem;
+
+          i {
+            color: #FFD700;
+            font-size: 1rem;
+          }
+        }
+
+        .review-text {
+          font-size: 0.875rem;
+          font-style: italic;
+          margin-bottom: 0.5rem;
+          line-height: 1.5;
+        }
+
+        .review-author {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 991.98px) {
+    padding: 60px 0;
+
+    .hero-slider {
+      .swiper-slide {
+        .row {
+          min-height: auto;
+        }
+      }
+
+      .swiper-wrapper {
+        height: auto !important;
+      }
+    }
+
+    .slide-content {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .slide-cta {
+        justify-content: center;
+      }
+
+      .feature-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .slide-sale {
+      .countdown-container {
+        .countdown {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 40px 0;
+
+    .hero-slider {
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: 36px;
+        height: 36px;
+
+        &::after {
+          font-size: 1rem;
+        }
+      }
+
+      .swiper-button-prev {
+        left: calc(50% - 50px);
+      }
+
+      .swiper-button-next {
+        right: calc(50% - 50px);
+      }
+
+      .swiper-slide {
+        height: auto;
+
+        .row {
+          min-height: 0;
+        }
+      }
+    }
+
+    .slide-content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .slide-new {
+      .product-showcase {
+        .product-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 0.75rem;
+
+          .product-item {
+            .product-image {
+              height: 140px;
+              padding: 0.5rem;
+            }
+
+            .product-info {
+              padding: 0.75rem;
+
+              h4 {
+                font-size: 0.875rem;
+                margin-bottom: 0.25rem;
+              }
+
+              .price {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slide-sale {
+      .countdown-container {
+        margin-top: 1rem;
+
+        .countdown-label {
+          font-size: 0.875rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .countdown {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.5rem;
+
+          >div {
+            min-width: 55px;
+            padding: 0.5rem;
+
+            h3 {
+              font-size: 1.25rem;
+              margin-bottom: 0.125rem;
+            }
+
+            h4 {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+
+      .sale-showcase {
+        .main-product {
+          .discount-badge {
+            width: 4rem;
+            height: 4rem;
+
+            .percent {
+              font-size: 1.5rem;
+            }
+
+            .text {
+              font-size: 0.875rem;
+            }
+          }
+        }
+
+        .floating-tag {
+          bottom: 1rem;
+          left: 1rem;
+          padding: 0.75rem;
+        }
+      }
+    }
+
+    .slide-featured {
+      .featured-showcase {
+        .featured-image {
+          .featured-badge {
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem;
+          }
+        }
+
+        .floating-review {
+          bottom: 1rem;
+          right: 1rem;
+          padding: 0.75rem;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
