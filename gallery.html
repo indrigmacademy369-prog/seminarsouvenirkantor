@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Layanan Kami - Seminar & Souvenir</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header position-relative">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="Logo">
+          </a>
+
+
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+
+
+            <!-- Favorit -->
+            <a href="wishlist.html" class="header-action-btn d-none d-md-flex">
+              <i class="bi bi-heart"></i>
+              <span class="action-text d-none d-md-inline-block">Favorit</span>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <div class="dropdown cart-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-cart3"></i>
+                <span class="action-text d-none d-md-inline-block">Cart</span>
+                <span class="badge">3</span>
+              </button>
+              <div class="dropdown-menu cart-dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Keranjang Belanja (3)</h6>
+                </div>
+                <div class="dropdown-body">
+                  <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                        <div class="cart-item-meta">1 × $89.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Smart Watch</h6>
+                        <div class="cart-item-meta">1 × $129.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                        <div class="cart-item-meta">1 × $59.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$279.97</span>
+                  </div>
+                  <div class="cart-actions">
+                    <a href="cart.html" class="btn btn-outline-primary">Lihat Keranjang</a>
+                    <a href="checkout.html" class="btn btn-primary">Pembayaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="category.html">Katalog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html" class="active">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar py-2">
+      <div class="container-fluid container-xl">
+        <div class="announcement-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "effect": "slide",
+              "direction": "vertical"
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+            <div class="swiper-slide">💰 30 days money back guarantee</div>
+            <div class="swiper-slide">🎁 20% off on your first order - Use code: FIRST20</div>
+            <div class="swiper-slide">⚡ Flash Sale! Up to 70% off on selected items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title ss-hero" style="padding: 100px 0 60px; background-color: #fdfafb;">
+      <div class="container text-center">
+        <nav class="breadcrumbs d-flex justify-content-center">
+          <ol>
+            <li><a href="/">Beranda</a></li>
+            <li class="current">Galeri</li>
+          </ol>
+        </nav>
+        <h1 style="color: var(--heading-color); font-weight: 800; font-size: clamp(36px, 5vw, 48px); margin-top: 15px;">
+          Momen & Hasil Karya</h1>
+        <p style="color: var(--ss-text); max-width: 600px; margin: 15px auto 0; font-size: 16px; line-height: 1.8;">
+          Dokumentasi nyata hasil produksi merchandise dan bingkisan corporate terbaik yang pernah kami rancang untuk
+          ratusan mitra korporasi kami.</p>
+      </div>
+    </div>
+
+    <section class="section py-5">
+      <div class="container" data-aos="fade-up">
+        <!-- Filter / Nav (Functional) -->
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-5 pb-3" id="gallery-filters">
+          <button class="btn rounded-pill px-4 filter-btn active" data-filter="all"
+            style="background-color: var(--heading-color); color: #fff; font-weight: 600; border: 1px solid var(--heading-color);">Semua
+            Karya</button>
+          <button class="btn rounded-pill px-4 filter-btn" data-filter="corporate"
+            style="background-color: transparent; color: var(--ss-text); border: 1px solid #ddd; font-weight: 600; transition: 0.3s;">Corporate
+            Gifts</button>
+          <button class="btn rounded-pill px-4 filter-btn" data-filter="event"
+            style="background-color: transparent; color: var(--ss-text); border: 1px solid #ddd; font-weight: 600; transition: 0.3s;">Event
+            Merchandise</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6 gallery-box corporate" data-aos="fade-up" data-aos-delay="0">
+            <a href="assets/img/galeri/hardbox-vip-set-pertamina.webp" class="glightbox" data-gallery="gallery-main"
+              title="Hardbox VIP Set">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/hardbox-vip-set-pertamina.webp" alt="Hardbox VIP Set">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Hardbox VIP Set</h4>
+                  <span class="gallery-meta">Pertamina</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box event" data-aos="fade-up" data-aos-delay="100">
+            <a href="assets/img/galeri/paket-seminar-kit-kementrian-keuangan.webp" class="glightbox"
+              data-gallery="gallery-main" title="Paket Seminar Kit">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/paket-seminar-kit-kementrian-keuangan.webp" alt="Paket Seminar Kit">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Paket Seminar Kit</h4>
+                  <span class="gallery-meta">Kementerian Keuangan</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box event" data-aos="fade-up" data-aos-delay="200">
+            <a href="assets/img/galeri/jaket-komunitas-startup-tech.webp" class="glightbox" data-gallery="gallery-main"
+              title="Jaket Komunitas">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/jaket-komunitas-startup-tech.webp" alt="Jaket Komunitas">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Jaket Komunitas</h4>
+                  <span class="gallery-meta">Startup Tech</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box corporate" data-aos="fade-up" data-aos-delay="0">
+            <a href="assets/img/galeri/tumbler-pintar-bank-indonesia.webp" class="glightbox" data-gallery="gallery-main"
+              title="Tumbler Pintar">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/tumbler-pintar-bank-indonesia.webp" alt="Tumbler Pintar">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Tumbler Pintar</h4>
+                  <span class="gallery-meta">Bank Indonesia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box event" data-aos="fade-up" data-aos-delay="100">
+            <a href="assets/img/galeri/topi-promosi-event-fun-bike.webp" class="glightbox" data-gallery="gallery-main"
+              title="Topi Promosi">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/topi-promosi-event-fun-bike.webp" alt="Topi Promosi">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Topi Promosi</h4>
+                  <span class="gallery-meta">Event Fun Bike</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box corporate" data-aos="fade-up" data-aos-delay="200">
+            <a href="assets/img/galeri/hampers-natal-telkomsel.webp" class="glightbox" data-gallery="gallery-main"
+              title="Hampers Natal">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/hampers-natal-telkomsel.webp" alt="Hampers Natal">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Hampers Natal</h4>
+                  <span class="gallery-meta">Telkomsel</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box event" data-aos="fade-up" data-aos-delay="0">
+            <a href="assets/img/galeri/tas-kanvas-tebal-universitar-indonesia.webp" class="glightbox"
+              data-gallery="gallery-main" title="Tas Kanvas Tebal">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/tas-kanvas-tebal-universitar-indonesia.webp" alt="Tas Kanvas Tebal">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Tas Kanvas Tebal</h4>
+                  <span class="gallery-meta">Universitas Indonesia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box corporate" data-aos="fade-up" data-aos-delay="100">
+            <a href="assets/img/galeri/agenda-kulit-deboss-mahkamah-agung.webp" class="glightbox"
+              data-gallery="gallery-main" title="Agenda Kulit Deboss">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/agenda-kulit-deboss-mahkamah-agung.webp" alt="Agenda Kulit Deboss">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Agenda Kulit Deboss</h4>
+                  <span class="gallery-meta">Mahkamah Agung</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-box corporate" data-aos="fade-up" data-aos-delay="200">
+            <a href="assets/img/galeri/jam-dinding-eksklusif-rs-siloam.webp" class="glightbox"
+              data-gallery="gallery-main" title="Jam Dinding Eksklusif">
+              <div class="gallery-item">
+                <img src="assets/img/galeri/jam-dinding-eksklusif-rs-siloam.webp" alt="Jam Dinding Eksklusif">
+                <div class="gallery-overlay">
+                  <h4 class="gallery-title">Jam Dinding Eksklusif</h4>
+                  <span class="gallery-meta">RS Siloam</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Load More CTA -->
+        <div class="text-center mt-5 pt-5">
+          <a href="https://wa.me/628898964355" target="_blank" class="btn px-5 py-3 rounded-pill"
+            style="border: 2px solid var(--heading-color); color: var(--heading-color); font-weight: 700; font-size: 16px; transition: 0.3s;"
+            onmouseover="this.style.background='var(--heading-color)'; this.style.color='#fff';"
+            onmouseout="this.style.background='transparent'; this.style.color='var(--heading-color)';">
+            Lihat Portofolio Lengkap di WA <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="/" class="logo"><img src="assets/img/logo.webp" alt="Logo"></a>
+              <p>Kami menyediakan seminar kit, souvenir kantor, corporate gift, merchandise, dan hampers berkualitas
+                untuk perusahaan Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Ikuti Kami</h5>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Produk</h4>
+              <ul class="footer-links">
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Bantuan</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Informasi Kontak</h4>
+              <div class="footer-contact">
+                <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Jl. Contoh No. 123, Jakarta,
+                    Indonesia</span></div>
+                <div class="contact-item"><i class="bi bi-telephone"></i><span><a href="https://wa.me/628898964355"
+                      target="_blank" rel="noopener">+62 889-8964-355</a></span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>halo@contoh.com</span></div>
+                <div class="contact-item"><i class="bi bi-clock"></i><span>Senin-Jumat: 09.00-17.00<br>Sabtu:
+                    09.00-14.00<br>Minggu: Libur</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Hak Cipta</span> <strong class="sitename">Seminar &amp; Souvenir</strong>. Seluruh hak
+                dilindungi.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+              <div class="legal-links">
+                <a href="tos.html">Syarat &amp; Ketentuan</a>
+                <a href="privacy.html">Kebijakan Privasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/628898964355" class="wa-float d-flex align-items-center justify-content-center" target="_blank"
+    rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <!-- Gallery Filtering Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filters = document.querySelectorAll("#gallery-filters .filter-btn");
+      const items = document.querySelectorAll(".gallery-box");
+
+      // Set hover styling for inactive buttons
+      filters.forEach(btn => {
+        btn.addEventListener("mouseenter", function () {
+          if (!this.classList.contains("active")) {
+            this.style.borderColor = "var(--accent-color)";
+            this.style.color = "var(--accent-color)";
+          }
+        });
+        btn.addEventListener("mouseleave", function () {
+          if (!this.classList.contains("active")) {
+            this.style.borderColor = "#ddd";
+            this.style.color = "var(--ss-text)";
+          }
+        });
+
+        // Click handler
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Reset all buttons
+          filters.forEach(f => {
+            f.classList.remove("active");
+            f.style.backgroundColor = "transparent";
+            f.style.color = "var(--ss-text)";
+            f.style.borderColor = "#ddd";
+          });
+
+          // Activate clicked button
+          this.classList.add("active");
+          this.style.backgroundColor = "var(--heading-color)";
+          this.style.color = "#fff";
+          this.style.borderColor = "var(--heading-color)";
+
+          const filterValue = this.getAttribute("data-filter");
+
+          items.forEach(item => {
+            if (filterValue === "all" || item.classList.contains(filterValue)) {
+              item.style.display = "block";
+              setTimeout(() => {
+                item.style.opacity = "1";
+                item.style.transform = "scale(1)";
+              }, 50);
+            } else {
+              item.style.opacity = "0";
+              item.style.transform = "scale(0.8)";
+              setTimeout(() => {
+                item.style.display = "none";
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // Ensure smooth CSS transitions on items
+      items.forEach(item => {
+        item.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+      });
+    });
+  </script>
+  <script src="assets/js/store.js"></script>
+</body>
+
+</html>

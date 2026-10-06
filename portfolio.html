@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Layanan Kami - Seminar & Souvenir</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header position-relative">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="Logo">
+          </a>
+
+
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+
+
+            <!-- Favorit -->
+            <a href="wishlist.html" class="header-action-btn d-none d-md-flex">
+              <i class="bi bi-heart"></i>
+              <span class="action-text d-none d-md-inline-block">Favorit</span>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <div class="dropdown cart-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-cart3"></i>
+                <span class="action-text d-none d-md-inline-block">Cart</span>
+                <span class="badge">3</span>
+              </button>
+              <div class="dropdown-menu cart-dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Keranjang Belanja (3)</h6>
+                </div>
+                <div class="dropdown-body">
+                  <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                        <div class="cart-item-meta">1 × $89.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Smart Watch</h6>
+                        <div class="cart-item-meta">1 × $129.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                        <div class="cart-item-meta">1 × $59.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$279.97</span>
+                  </div>
+                  <div class="cart-actions">
+                    <a href="cart.html" class="btn btn-outline-primary">Lihat Keranjang</a>
+                    <a href="checkout.html" class="btn btn-primary">Pembayaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="category.html">Katalog</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar py-2">
+      <div class="container-fluid container-xl">
+        <div class="announcement-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "effect": "slide",
+              "direction": "vertical"
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+            <div class="swiper-slide">💰 30 days money back guarantee</div>
+            <div class="swiper-slide">🎁 20% off on your first order - Use code: FIRST20</div>
+            <div class="swiper-slide">⚡ Flash Sale! Up to 70% off on selected items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title ss-hero" style="padding: 100px 0 60px; background-color: #fdfafb;">
+      <div class="container text-center">
+        <nav class="breadcrumbs d-flex justify-content-center">
+          <ol>
+            <li><a href="/">Beranda</a></li>
+            <li class="current">Studi Kasus & Portofolio</li>
+          </ol>
+        </nav>
+        <h1 style="color: var(--heading-color); font-weight: 800; font-size: clamp(36px, 5vw, 48px); margin-top: 15px;">
+          Studi Kasus & Klien Kami</h1>
+        <p style="color: var(--ss-text); max-width: 700px; margin: 15px auto 0; font-size: 16px; line-height: 1.8;">
+          Dipercaya oleh kementerian, institusi pendidikan, hingga perusahaan teknologi raksasa. Temukan bagaimana kami
+          mengubah ide menjadi merchandise fisik yang memperkuat identitas brand klien kami.</p>
+      </div>
+    </div>
+
+    <section class="section py-5">
+      <div class="container">
+
+        <!-- Grid -->
+        <div class="row g-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="portfolio-card-v2" data-bs-toggle="modal" data-bs-target="#modal-pt-telkomsel">
+              <div class="portfolio-card-image">
+                <img src="assets/img/all img/telkomsel-hampers-vip-akhir-tahun.webp"
+                  alt="Hampers VIP Akhir Tahun (End-of-Year Gifting)">
+                <div class="portfolio-card-overlay">
+                  <span class="view-project-btn">Lihat Studi Kasus <i class="bi bi-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+              <div class="portfolio-card-body text-center">
+                <span class="client-tag">Telkomsel</span>
+                <h4 class="project-title">Hampers VIP Akhir Tahun (End-of-Year Gifting)</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card-v2" data-bs-toggle="modal" data-bs-target="#modal-kemenkeu">
+              <div class="portfolio-card-image">
+                <img src="assets/img/all img/kementrian-keuangan-pengadaan-seminar-rapat.webp"
+                  alt="Pengadaan Seminar Kit Rapat Koordinasi Nasional">
+                <div class="portfolio-card-overlay">
+                  <span class="view-project-btn">Lihat Studi Kasus <i class="bi bi-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+              <div class="portfolio-card-body text-center">
+                <span class="client-tag">Kementerian Keuangan</span>
+                <h4 class="project-title">Pengadaan Seminar Kit Rapat Koordinasi Nasional</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card-v2" data-bs-toggle="modal" data-bs-target="#modal-tokopedia">
+              <div class="portfolio-card-image">
+                <img src="assets/img/all img/tokopedia-onboarding-kit.webp" alt="Onboarding Kit Karyawan Baru">
+                <div class="portfolio-card-overlay">
+                  <span class="view-project-btn">Lihat Studi Kasus <i class="bi bi-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+              <div class="portfolio-card-body text-center">
+                <span class="client-tag">Tokopedia</span>
+                <h4 class="project-title">Onboarding Kit Karyawan Baru</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Bawah -->
+        <div class="mt-5 pt-5 text-center" data-aos="zoom-in">
+          <div
+            style="background: linear-gradient(135deg, var(--heading-color), var(--accent-color)); padding: 50px 30px; border-radius: 30px; box-shadow: 0 20px 40px rgba(140,13,79,0.2);">
+            <h3 style="color: #fff; font-weight: 800; margin-bottom: 20px;">Jadilah Kisah Sukses Kami Berikutnya</h3>
+            <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 30px; font-size: 18px;">
+              Konsultasikan kebutuhan merchandise dan seminar kit perusahaan Anda bersama ahlinya.</p>
+            <a href="https://wa.me/628898964355" target="_blank" class="btn px-5 py-3"
+              style="background: #fff; color: var(--heading-color); border-radius: 50px; font-weight: 800; font-size: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">Mulai
+              Konsultasi Gratis</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals Container -->
+
+  <div class="modal fade" id="modal-pt-telkomsel" tabindex="-1" aria-labelledby="modalLabel-pt-telkomsel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel-pt-telkomsel">Telkomsel - Case Study</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/all img/telkomsel-hampers-vip-akhir-tahun.webp"
+            alt="Hampers VIP Akhir Tahun (End-of-Year Gifting)" class="portfolio-modal-img">
+          <div class="portfolio-modal-details">
+            <h3 style="font-weight: 800; color: var(--heading-color); font-size: 26px; margin-bottom: 25px;">Hampers VIP
+              Akhir Tahun (End-of-Year Gifting)</h3>
+
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-bullseye me-2"></i>Tantangan / Kebutuhan</div>
+                  <div class="detail-text">Telkomsel membutuhkan hampers eksklusif berskala nasional untuk 500 klien
+                    VVIP dan mitra korporat sebagai bentuk apresiasi tahunan.</div>
+                </div>
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-lightbulb me-2"></i>Solusi Kami</div>
+                  <div class="detail-text">Kami merancang Hardbox berlapis beludru premium dengan embos logo emas. Di
+                    dalamnya terdapat agenda kulit deboss, pulpen metal eksklusif, dan tumbler pintar dengan indikator
+                    suhu.</div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="detail-block"
+                  style="background: #fdfafb; padding: 20px; border-radius: 15px; border: 1px solid #f0e6ea;">
+                  <div class="detail-label"><i class="bi bi-box-seam me-2"></i>Item Produksi</div>
+                  <div class="project-items mt-2">
+                    <span>VIP Hardbox</span><span>Tumbler Pintar LED</span><span>Agenda Kulit</span><span>Pulpen
+                      Metal</span>
+                  </div>
+                </div>
+                <div class="detail-block mt-4">
+                  <div class="detail-label"><i class="bi bi-chat-quote me-2"></i>Hasil & Dampak</div>
+                  <div class="detail-text" style="font-style: italic;">"Klien kami sangat terkesan dengan tingkat detail
+                    dan kemewahan hampers ini. Ini benar-benar meningkatkan citra perusahaan kami di mata mitra." - VP
+                    of Corporate Relations.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer" style="background: #f9f9f9; border-top: none; padding: 20px 30px;">
+          <a href="https://wa.me/628898964355" target="_blank" class="btn rounded-pill px-4"
+            style="background: var(--heading-color); color: #fff; font-weight: 600;">Pesan Proyek Serupa <i
+              class="bi bi-whatsapp ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-kemenkeu" tabindex="-1" aria-labelledby="modalLabel-kemenkeu" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel-kemenkeu">Kementerian Keuangan - Case Study</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/all img/kementrian-keuangan-pengadaan-seminar-rapat.webp"
+            alt="Pengadaan Seminar Kit Rapat Koordinasi Nasional" class="portfolio-modal-img">
+          <div class="portfolio-modal-details">
+            <h3 style="font-weight: 800; color: var(--heading-color); font-size: 26px; margin-bottom: 25px;">Pengadaan
+              Seminar Kit Rapat Koordinasi Nasional</h3>
+
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-bullseye me-2"></i>Tantangan / Kebutuhan</div>
+                  <div class="detail-text">Kementerian Keuangan mengadakan rapat nasional yang dihadiri oleh 1.200
+                    delegasi dari seluruh Indonesia dan membutuhkan seminar kit yang fungsional namun elegan.</div>
+                </div>
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-lightbulb me-2"></i>Solusi Kami</div>
+                  <div class="detail-text">Menyediakan paket tas ransel laptop kanvas, blocknote ring spiral kustom,
+                    lanyard tebal dengan ID card berbahan kulit, dan tumbler stainless steel tahan panas.</div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="detail-block"
+                  style="background: #fdfafb; padding: 20px; border-radius: 15px; border: 1px solid #f0e6ea;">
+                  <div class="detail-label"><i class="bi bi-box-seam me-2"></i>Item Produksi</div>
+                  <div class="project-items mt-2">
+                    <span>Tas Ransel Kanvas</span><span>Lanyard Kulit</span><span>Blocknote Custom</span><span>Tumbler
+                      Stainless</span>
+                  </div>
+                </div>
+                <div class="detail-block mt-4">
+                  <div class="detail-label"><i class="bi bi-chat-quote me-2"></i>Hasil & Dampak</div>
+                  <div class="detail-text" style="font-style: italic;">Distribusi 1.200 paket selesai tepat waktu H-3
+                    sebelum acara, dengan tingkat cacat produksi 0%. Delegasi sangat menyukai tas ransel yang dapat
+                    mereka pakai kembali untuk bekerja.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer" style="background: #f9f9f9; border-top: none; padding: 20px 30px;">
+          <a href="https://wa.me/628898964355" target="_blank" class="btn rounded-pill px-4"
+            style="background: var(--heading-color); color: #fff; font-weight: 600;">Pesan Proyek Serupa <i
+              class="bi bi-whatsapp ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-tokopedia" tabindex="-1" aria-labelledby="modalLabel-tokopedia" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel-tokopedia">Tokopedia - Case Study</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/all img/tokopedia-onboarding-kit.webp" alt="Onboarding Kit Karyawan Baru"
+            class="portfolio-modal-img">
+          <div class="portfolio-modal-details">
+            <h3 style="font-weight: 800; color: var(--heading-color); font-size: 26px; margin-bottom: 25px;">Onboarding
+              Kit Karyawan Baru</h3>
+
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-bullseye me-2"></i>Tantangan / Kebutuhan</div>
+                  <div class="detail-text">Sebagai perusahaan teknologi yang terus berkembang, mereka membutuhkan
+                    welcome kit standar yang dapat membangkitkan rasa memiliki bagi karyawan baru sejak hari pertama.
+                  </div>
+                </div>
+                <div class="detail-block">
+                  <div class="detail-label"><i class="bi bi-lightbulb me-2"></i>Solusi Kami</div>
+                  <div class="detail-text">Menciptakan "Tech Welcome Kit" yang terdiri dari Jaket Hoodie komunitas
+                    bordir presisi, botol minum estetik, stiker laptop, dan notebook catatan ide-ide kreatif.</div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="detail-block"
+                  style="background: #fdfafb; padding: 20px; border-radius: 15px; border: 1px solid #f0e6ea;">
+                  <div class="detail-label"><i class="bi bi-box-seam me-2"></i>Item Produksi</div>
+                  <div class="project-items mt-2">
+                    <span>Jaket Hoodie Bordir</span><span>Botol Minum Estetik</span><span>Stiker
+                      Pack</span><span>Notebook Kreatif</span>
+                  </div>
+                </div>
+                <div class="detail-block mt-4">
+                  <div class="detail-label"><i class="bi bi-chat-quote me-2"></i>Hasil & Dampak</div>
+                  <div class="detail-text" style="font-style: italic;">Karyawan baru langsung membagikan foto kit mereka
+                    di media sosial (LinkedIn/Instagram), memberikan eksposur positif terhadap budaya kerja perusahaan.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer" style="background: #f9f9f9; border-top: none; padding: 20px 30px;">
+          <a href="https://wa.me/628898964355" target="_blank" class="btn rounded-pill px-4"
+            style="background: var(--heading-color); color: #fff; font-weight: 600;">Pesan Proyek Serupa <i
+              class="bi bi-whatsapp ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="/" class="logo"><img src="assets/img/logo.webp" alt="Logo"></a>
+              <p>Kami menyediakan seminar kit, souvenir kantor, corporate gift, merchandise, dan hampers berkualitas
+                untuk perusahaan Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Ikuti Kami</h5>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Produk</h4>
+              <ul class="footer-links">
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Bantuan</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Informasi Kontak</h4>
+              <div class="footer-contact">
+                <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Jl. Contoh No. 123, Jakarta,
+                    Indonesia</span></div>
+                <div class="contact-item"><i class="bi bi-telephone"></i><span><a href="https://wa.me/628898964355"
+                      target="_blank" rel="noopener">+62 889-8964-355</a></span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>halo@contoh.com</span></div>
+                <div class="contact-item"><i class="bi bi-clock"></i><span>Senin-Jumat: 09.00-17.00<br>Sabtu:
+                    09.00-14.00<br>Minggu: Libur</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Hak Cipta</span> <strong class="sitename">Seminar &amp; Souvenir</strong>. Seluruh hak
+                dilindungi.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+              <div class="legal-links">
+                <a href="tos.html">Syarat &amp; Ketentuan</a>
+                <a href="privacy.html">Kebijakan Privasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/628898964355" class="wa-float d-flex align-items-center justify-content-center" target="_blank"
+    rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/store.js"></script>
+</body>
+
+</html>

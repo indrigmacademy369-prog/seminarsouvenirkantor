@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Layanan Kami - Seminar & Souvenir</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header position-relative">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="Logo">
+          </a>
+
+
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+
+
+            <!-- Favorit -->
+            <a href="wishlist.html" class="header-action-btn d-none d-md-flex">
+              <i class="bi bi-heart"></i>
+              <span class="action-text d-none d-md-inline-block">Favorit</span>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <div class="dropdown cart-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-cart3"></i>
+                <span class="action-text d-none d-md-inline-block">Cart</span>
+                <span class="badge">3</span>
+              </button>
+              <div class="dropdown-menu cart-dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Keranjang Belanja (3)</h6>
+                </div>
+                <div class="dropdown-body">
+                  <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                        <div class="cart-item-meta">1 × $89.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Smart Watch</h6>
+                        <div class="cart-item-meta">1 × $129.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                        <div class="cart-item-meta">1 × $59.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$279.97</span>
+                  </div>
+                  <div class="cart-actions">
+                    <a href="cart.html" class="btn btn-outline-primary">Lihat Keranjang</a>
+                    <a href="checkout.html" class="btn btn-primary">Pembayaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a class="active" href="services.html">Layanan</a></li>
+            <li><a href="category.html">Katalog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar py-2">
+      <div class="container-fluid container-xl">
+        <div class="announcement-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "effect": "slide",
+              "direction": "vertical"
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+            <div class="swiper-slide">💰 30 days money back guarantee</div>
+            <div class="swiper-slide">🎁 20% off on your first order - Use code: FIRST20</div>
+            <div class="swiper-slide">⚡ Flash Sale! Up to 70% off on selected items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title ss-hero" style="padding: 60px 0;">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Beranda</a></li>
+            <li class="current">Layanan</li>
+          </ol>
+        </nav>
+        <h1 style="color: var(--heading-color);">Layanan Kami</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section class="ss-services section py-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="ss-head text-center">
+          <span class="ss-eyebrow">Apa Yang Kami Lakukan</span>
+          <h2 class="ss-title">Solusi End-to-End Untuk Event Anda</h2>
+          <p class="ss-lead">Kami menyediakan layanan komprehensif mulai dari desain, produksi, hingga pengemasan untuk
+            memastikan souvenir dan seminar kit Anda tampil sempurna.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-pencil-square"></i></div>
+              <h4>Desain Custom & Eksklusif</h4>
+              <p>Tim desainer kami siap mewujudkan ide Anda menjadi visual yang menarik. Dari logo hingga kemasan, semua
+                disesuaikan dengan identitas brand Anda.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-box-seam"></i></div>
+              <h4>Sourcing & Produksi</h4>
+              <p>Dengan jaringan vendor tepercaya, kami menemukan material terbaik dan mengawasi setiap proses produksi
+                untuk menjamin kualitas tinggi.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-gift"></i></div>
+              <h4>Packaging & Assembly</h4>
+              <p>Presentasi adalah kunci. Kami menawarkan pengemasan eksklusif mulai dari kotak kustom hingga pita dan
+                kartu ucapan yang elegan.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-truck"></i></div>
+              <h4>Pengiriman Tepat Waktu</h4>
+              <p>Distribusi aman dan terjadwal ke seluruh wilayah Indonesia. Kami memastikan paket tiba tepat waktu
+                sebelum acara Anda dimulai.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-check-circle"></i></div>
+              <h4>Quality Control Ketat</h4>
+              <p>Setiap barang melewati pemeriksaan berlapis sebelum dikirimkan untuk memastikan tidak ada kecacatan
+                produk sekecil apapun.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-card ss-service">
+              <div class="ss-icon"><i class="bi bi-headset"></i></div>
+              <h4>Layanan Konsultasi</h4>
+              <p>Bingung memilih item yang cocok? Konsultan kami siap membantu Anda memilih kombinasi barang yang pas
+                dengan budget dan tema.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="section py-5" style="background-color: #fff;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="ss-head text-center">
+          <span class="ss-eyebrow">Alur Kerja</span>
+          <h2 class="ss-title">Bagaimana Proses Kami Bekerja?</h2>
+          <p class="ss-lead">Langkah mudah dan transparan untuk memenuhi kebutuhan promosi dan suvenir perusahaan Anda.
+          </p>
+        </div>
+
+        <div class="row g-4 position-relative pt-4">
+          <!-- Step 1 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div style="text-align: center; padding: 20px;">
+              <div
+                style="width: 70px; height: 70px; background: var(--ss-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(20,33,61,0.15);">
+                1</div>
+              <h4 style="color: var(--ss-navy); font-weight: 700; font-size: 18px; margin-bottom: 12px;">Konsultasi Awal
+              </h4>
+              <p style="color: var(--ss-text); font-size: 14px; margin-bottom: 0;">Diskusikan kebutuhan, tema acara,
+                jumlah, dan anggaran Anda bersama tim ahli kami.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div style="text-align: center; padding: 20px;">
+              <div
+                style="width: 70px; height: 70px; background: var(--ss-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(20,33,61,0.15);">
+                2</div>
+              <h4 style="color: var(--ss-navy); font-weight: 700; font-size: 18px; margin-bottom: 12px;">Desain & Mockup
+              </h4>
+              <p style="color: var(--ss-text); font-size: 14px; margin-bottom: 0;">Kami akan membuat visualisasi produk
+                (mockup) dengan penempatan logo perusahaan Anda.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div style="text-align: center; padding: 20px;">
+              <div
+                style="width: 70px; height: 70px; background: var(--ss-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(20,33,61,0.15);">
+                3</div>
+              <h4 style="color: var(--ss-navy); font-weight: 700; font-size: 18px; margin-bottom: 12px;">Produksi Massal
+              </h4>
+              <p style="color: var(--ss-text); font-size: 14px; margin-bottom: 0;">Setelah sampel disetujui, kami
+                memulai produksi massal dengan pengawasan kualitas (QC) ketat.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div style="text-align: center; padding: 20px;">
+              <div
+                style="width: 70px; height: 70px; background: var(--ss-gold); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(194,154,67,0.3);">
+                4</div>
+              <h4 style="color: var(--ss-navy); font-weight: 700; font-size: 18px; margin-bottom: 12px;">Pengiriman</h4>
+              <p style="color: var(--ss-text); font-size: 14px; margin-bottom: 0;">Pengemasan rapi dan eksklusif, lalu
+                produk dikirimkan aman ke lokasi acara Anda.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="ss-cta section py-5">
+      <div class="container" data-aos="zoom-in">
+        <div class="ss-cta-box">
+          <h2>Konsultasikan Kebutuhan Anda</h2>
+          <p>Dapatkan panduan lengkap dan penawaran terbaik dari tim ahli kami. Kami siap menyukseskan setiap agenda
+            perusahaan Anda.</p>
+          <a href="contact.html" class="ss-btn-gold" style="display:inline-block; margin-top: 10px;">Hubungi Kami
+            Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="/" class="logo"><img src="assets/img/logo.webp" alt="Logo"></a>
+              <p>Kami menyediakan seminar kit, souvenir kantor, corporate gift, merchandise, dan hampers berkualitas
+                untuk perusahaan Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Ikuti Kami</h5>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Produk</h4>
+              <ul class="footer-links">
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Bantuan</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Informasi Kontak</h4>
+              <div class="footer-contact">
+                <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Jl. Contoh No. 123, Jakarta,
+                    Indonesia</span></div>
+                <div class="contact-item"><i class="bi bi-telephone"></i><span><a href="https://wa.me/628898964355"
+                      target="_blank" rel="noopener">+62 889-8964-355</a></span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>halo@contoh.com</span></div>
+                <div class="contact-item"><i class="bi bi-clock"></i><span>Senin-Jumat: 09.00-17.00<br>Sabtu:
+                    09.00-14.00<br>Minggu: Libur</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Hak Cipta</span> <strong class="sitename">Seminar &amp; Souvenir</strong>. Seluruh hak
+                dilindungi.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+              <div class="legal-links">
+                <a href="tos.html">Syarat &amp; Ketentuan</a>
+                <a href="privacy.html">Kebijakan Privasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/628898964355" class="wa-float d-flex align-items-center justify-content-center" target="_blank"
+    rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/store.js"></script>
+</body>
+
+</html>

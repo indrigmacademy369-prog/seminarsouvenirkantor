@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Layanan Kami - Seminar & Souvenir</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header position-relative">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="Logo">
+          </a>
+
+
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+
+
+            <!-- Favorit -->
+            <a href="wishlist.html" class="header-action-btn d-none d-md-flex">
+              <i class="bi bi-heart"></i>
+              <span class="action-text d-none d-md-inline-block">Favorit</span>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <div class="dropdown cart-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-cart3"></i>
+                <span class="action-text d-none d-md-inline-block">Cart</span>
+                <span class="badge">3</span>
+              </button>
+              <div class="dropdown-menu cart-dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Keranjang Belanja (3)</h6>
+                </div>
+                <div class="dropdown-body">
+                  <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                        <div class="cart-item-meta">1 × $89.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Smart Watch</h6>
+                        <div class="cart-item-meta">1 × $129.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                        <div class="cart-item-meta">1 × $59.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$279.97</span>
+                  </div>
+                  <div class="cart-actions">
+                    <a href="cart.html" class="btn btn-outline-primary">Lihat Keranjang</a>
+                    <a href="checkout.html" class="btn btn-primary">Pembayaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="category.html">Katalog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="dropdown"><a href="#" class="active"><span>Produk</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html" class="active">Hampers</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar py-2">
+      <div class="container-fluid container-xl">
+        <div class="announcement-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "effect": "slide",
+              "direction": "vertical"
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+            <div class="swiper-slide">💰 30 days money back guarantee</div>
+            <div class="swiper-slide">🎁 20% off on your first order - Use code: FIRST20</div>
+            <div class="swiper-slide">⚡ Flash Sale! Up to 70% off on selected items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+  <main class="main">
+    <div class="page-title ss-hero" style="padding: 60px 0;">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Beranda</a></li>
+            <li>Produk</li>
+            <li class="current">Hampers Perusahaan</li>
+          </ol>
+        </nav>
+        <h1 style="color: var(--heading-color);">Hampers Perusahaan</h1>
+        <p style="color: var(--heading-color); max-width: 700px; margin-top: 15px; font-size: 16px;">Bingkisan tematik
+          untuk perayaan Idul Fitri, Natal, Tahun Baru, atau apresiasi akhir tahun.</p>
+      </div>
+    </div>
+
+    <section class="section py-5" style="background-color: #fcfcfc;">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+            <span class="ss-eyebrow"
+              style="color: var(--accent-color); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Tentang
+              Hampers Perusahaan</span>
+            <h2
+              style="color: var(--heading-color); font-weight: 700; font-size: clamp(28px, 4vw, 36px); margin: 15px 0 25px;">
+              Menyambung Tali Silaturahmi Melalui Hampers Elegan</h2>
+            <p style="color: var(--ss-text); line-height: 1.8; font-size: 16px;">Momen perayaan adalah waktu yang tepat
+              untuk mengirimkan perhatian kepada karyawan dan klien. Kami merakit hampers custom yang isinya bisa
+              disesuaikan dengan anggaran Anda, mulai dari kue kering premium, teh artisan, alat makan kayu estetik,
+              hingga perlengkapan ibadah. Semuanya dikemas cantik dalam kotak anyaman bambu, tas purun, atau hardbox
+              bermotif perayaan lengkap dengan kartu ucapan kustom bertanda tangan direksi.</p>
+          </div>
+          <div class="col-lg-6">
+            <div
+              style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(62,9,37,0.1);">
+              <img src="assets/img/all img/hampers-perusahaan.webp" alt="Hampers Perusahaan" class="img-fluid"
+                style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+              <div
+                style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(140,13,79,0.2) 0%, rgba(62,9,37,0.4) 100%);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <h2 style="color: var(--heading-color); font-weight: 700; font-size: 32px;">Pilihan Produk Hampers Perusahaan
+          </h2>
+          <p style="color: var(--ss-text); font-size: 16px;">Contoh produk unggulan kami. Hubungi CS untuk customisasi
+            penuh.</p>
+        </div>
+        <div class="row g-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="ss-prod-card">
+              <div class="ss-prod-img-box">
+                <img src="assets/img/all img/hampers-lebaran-idul-fitri.webp" alt="Hampers Lebaran / Idul Fitri">
+                <div class="ss-prod-actions">
+                  <button class="ss-prod-btn"
+                    onclick="updateCart(event, 'Hampers Lebaran / Idul Fitri', 'Rp 150.000', 'assets/img/all img/hampers-lebaran.webp')"
+                    title="Tambah ke Keranjang"><i class="bi bi-cart-plus"></i></button>
+                  <button class="ss-prod-btn wishlist-btn"
+                    onclick="updateWishlist(event, 'Hampers Lebaran / Idul Fitri', this)" style="color: #6c757d;"
+                    title="Tambah ke Favorit"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--heading-color); margin-bottom: 5px;">Hampers
+                  Lebaran / Idul Fitri</h4>
+                <p style="font-size: 13px; color: var(--ss-text); margin-bottom: 15px; line-height: 1.4; opacity: 0.8;">
+                  Isi nastar, teh artisan, dan sajadah</p>
+                <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--accent-color); font-weight: 700; font-size: 16px;">Rp 150.000</span>
+                  <a href="produk/hampers-lebaran.html" class="btn btn-sm rounded-pill"
+                    style="border: 1px solid var(--accent-color); color: var(--accent-color); font-weight: 600; padding: 5px 15px; transition: 0.3s;"
+                    onmouseover="this.style.background='var(--accent-color)'; this.style.color='#fff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--accent-color)';">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="ss-prod-card">
+              <div class="ss-prod-img-box">
+                <img src="assets/img/all img/hampers-natal-tahun-baru.webp" alt="Hampers Natal & Tahun Baru">
+                <div class="ss-prod-actions">
+                  <button class="ss-prod-btn"
+                    onclick="updateCart(event, 'Hampers Natal & Tahun Baru', 'Rp 175.000', 'assets/img/all img/hampers-natal.webp')"
+                    title="Tambah ke Keranjang"><i class="bi bi-cart-plus"></i></button>
+                  <button class="ss-prod-btn wishlist-btn"
+                    onclick="updateWishlist(event, 'Hampers Natal & Tahun Baru', this)" style="color: #6c757d;"
+                    title="Tambah ke Favorit"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--heading-color); margin-bottom: 5px;">Hampers
+                  Natal & Tahun Baru</h4>
+                <p style="font-size: 13px; color: var(--ss-text); margin-bottom: 15px; line-height: 1.4; opacity: 0.8;">
+                  Isi coklat, cookies, dan mug keramik</p>
+                <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--accent-color); font-weight: 700; font-size: 16px;">Rp 175.000</span>
+                  <a href="produk/hampers-natal.html" class="btn btn-sm rounded-pill"
+                    style="border: 1px solid var(--accent-color); color: var(--accent-color); font-weight: 600; padding: 5px 15px; transition: 0.3s;"
+                    onmouseover="this.style.background='var(--accent-color)'; this.style.color='#fff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--accent-color)';">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="ss-prod-card">
+              <div class="ss-prod-img-box">
+                <img src="assets/img/all img/onboarding-kit-karyawan-baru.webp" alt="Onboarding Kit (Karyawan Baru)">
+                <div class="ss-prod-actions">
+                  <button class="ss-prod-btn"
+                    onclick="updateCart(event, 'Onboarding Kit (Karyawan Baru)', 'Rp 200.000', 'assets/img/all img/onboarding-kit.webp')"
+                    title="Tambah ke Keranjang"><i class="bi bi-cart-plus"></i></button>
+                  <button class="ss-prod-btn wishlist-btn"
+                    onclick="updateWishlist(event, 'Onboarding Kit (Karyawan Baru)', this)" style="color: #6c757d;"
+                    title="Tambah ke Favorit"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--heading-color); margin-bottom: 5px;">
+                  Onboarding Kit (Karyawan Baru)</h4>
+                <p style="font-size: 13px; color: var(--ss-text); margin-bottom: 15px; line-height: 1.4; opacity: 0.8;">
+                  Isi hoodie, botol minum, ID card, stiker</p>
+                <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--accent-color); font-weight: 700; font-size: 16px;">Rp 200.000</span>
+                  <a href="produk/onboarding-kit.html" class="btn btn-sm rounded-pill"
+                    style="border: 1px solid var(--accent-color); color: var(--accent-color); font-weight: 600; padding: 5px 15px; transition: 0.3s;"
+                    onmouseover="this.style.background='var(--accent-color)'; this.style.color='#fff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--accent-color)';">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="ss-prod-card">
+              <div class="ss-prod-img-box">
+                <img src="assets/img/all img/hampers-ulang-tahun-perusahaan.webp" alt="Hampers Ulang Tahun Perusahaan">
+                <div class="ss-prod-actions">
+                  <button class="ss-prod-btn"
+                    onclick="updateCart(event, 'Hampers Ulang Tahun Perusahaan', 'Rp 125.000', 'assets/img/all img/hampers-ultah-perusahaan.webp')"
+                    title="Tambah ke Keranjang"><i class="bi bi-cart-plus"></i></button>
+                  <button class="ss-prod-btn wishlist-btn"
+                    onclick="updateWishlist(event, 'Hampers Ulang Tahun Perusahaan', this)" style="color: #6c757d;"
+                    title="Tambah ke Favorit"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--heading-color); margin-bottom: 5px;">Hampers
+                  Ulang Tahun Perusahaan</h4>
+                <p style="font-size: 13px; color: var(--ss-text); margin-bottom: 15px; line-height: 1.4; opacity: 0.8;">
+                  Mini cake, t-shirt, dan voucher</p>
+                <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--accent-color); font-weight: 700; font-size: 16px;">Rp 125.000</span>
+                  <a href="produk/hampers-ultah.html" class="btn btn-sm rounded-pill"
+                    style="border: 1px solid var(--accent-color); color: var(--accent-color); font-weight: 600; padding: 5px 15px; transition: 0.3s;"
+                    onmouseover="this.style.background='var(--accent-color)'; this.style.color='#fff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--accent-color)';">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Elegant CTA Card -->
+    <section class="section py-5 mb-5">
+      <div class="container" data-aos="zoom-in">
+        <div
+          style="background: linear-gradient(135deg, var(--heading-color) 0%, var(--accent-color) 100%); border-radius: 30px; padding: 60px 40px; box-shadow: 0 20px 40px rgba(62, 9, 37, 0.2); position: relative; overflow: hidden; text-align: center;">
+
+          <!-- Decorative Elements -->
+          <div
+            style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%;">
+          </div>
+          <div
+            style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.05); border-radius: 50%;">
+          </div>
+          <div
+            style="position: absolute; top: 40%; left: 10%; width: 50px; height: 50px; background: rgba(255,255,255,0.05); border-radius: 50%;">
+          </div>
+
+          <div style="position: relative; z-index: 1;">
+            <h2 style="color: #fff; font-weight: 700; font-size: clamp(24px, 4vw, 36px); margin-bottom: 20px;">Punya
+              Spesifikasi atau Anggaran Khusus?</h2>
+            <p
+              style="color: rgba(255,255,255,0.85); margin-bottom: 35px; font-size: 18px; max-width: 700px; margin-left: auto; margin-right: auto;">
+              Tim spesialis kami siap berdiskusi untuk merancang paket <strong>Hampers Perusahaan</strong> eksklusif
+              yang paling pas dan memukau untuk event Anda.</p>
+
+            <a href="https://wa.me/628898964355" target="_blank" class="btn px-5 py-3"
+              style="border-radius: 50px; font-size: 18px; background-color: #fff; color: var(--heading-color); font-weight: 700; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transition: 0.3s;"
+              onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.25)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)'">
+              <i class="bi bi-whatsapp me-2" style="color: #25D366; font-size: 22px; vertical-align: middle;"></i> <span
+                style="vertical-align: middle;">Konsultasi Gratis via WA</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="/" class="logo"><img src="assets/img/logo.webp" alt="Logo"></a>
+              <p>Kami menyediakan seminar kit, souvenir kantor, corporate gift, merchandise, dan hampers berkualitas
+                untuk perusahaan Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Ikuti Kami</h5>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Produk</h4>
+              <ul class="footer-links">
+                <li><a href="seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Bantuan</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Informasi Kontak</h4>
+              <div class="footer-contact">
+                <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Jl. Contoh No. 123, Jakarta,
+                    Indonesia</span></div>
+                <div class="contact-item"><i class="bi bi-telephone"></i><span><a href="https://wa.me/628898964355"
+                      target="_blank" rel="noopener">+62 889-8964-355</a></span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>halo@contoh.com</span></div>
+                <div class="contact-item"><i class="bi bi-clock"></i><span>Senin-Jumat: 09.00-17.00<br>Sabtu:
+                    09.00-14.00<br>Minggu: Libur</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Hak Cipta</span> <strong class="sitename">Seminar &amp; Souvenir</strong>. Seluruh hak
+                dilindungi.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+              <div class="legal-links">
+                <a href="tos.html">Syarat &amp; Ketentuan</a>
+                <a href="privacy.html">Kebijakan Privasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/628898964355" class="wa-float d-flex align-items-center justify-content-center" target="_blank"
+    rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+  <script src="assets/js/store.js"></script>
+</body>
+
+</html>

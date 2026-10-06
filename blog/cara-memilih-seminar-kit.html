@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Layanan Kami - Seminar & Souvenir</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.webp" rel="icon">
+  <link href="../assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header position-relative">
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="..//" class="logo d-flex align-items-center">
+            <img src="../assets/img/logo.webp" alt="Logo">
+          </a>
+
+
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+
+
+            <!-- Favorit -->
+            <a href="../wishlist.html" class="header-action-btn d-none d-md-flex">
+              <i class="bi bi-heart"></i>
+              <span class="action-text d-none d-md-inline-block">Favorit</span>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <div class="dropdown cart-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-cart3"></i>
+                <span class="action-text d-none d-md-inline-block">Cart</span>
+                <span class="badge">3</span>
+              </button>
+              <div class="dropdown-menu cart-dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Keranjang Belanja (3)</h6>
+                </div>
+                <div class="dropdown-body">
+                  <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="../assets/img/product/product-1.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                        <div class="cart-item-meta">1 × $89.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="../assets/img/product/product-2.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Smart Watch</h6>
+                        <div class="cart-item-meta">1 × $129.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                      <div class="cart-item-image">
+                        <img src="../assets/img/product/product-3.webp" alt="Product" class="img-fluid">
+                      </div>
+                      <div class="cart-item-content">
+                        <h6 class="cart-item-title">Bluetooth Speaker</h6>
+                        <div class="cart-item-meta">1 × $59.99</div>
+                      </div>
+                      <button class="cart-item-remove">
+                        <i class="bi bi-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$279.97</span>
+                  </div>
+                  <div class="cart-actions">
+                    <a href="../cart.html" class="btn btn-outline-primary">Lihat Keranjang</a>
+                    <a href="../checkout.html" class="btn btn-primary">Pembayaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="..//">Beranda</a></li>
+            <li><a href="../about.html">Tentang Kami</a></li>
+            <li><a href="../services.html">Layanan</a></li>
+            <li><a href="../category.html">Katalog</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="../seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="../souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="../corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="../merchandise.html">Merchandise</a></li>
+                <li><a href="../hampers.html">Hampers</a></li>
+              </ul>
+            </li>
+            <li><a href="../blog.html" class="active">Blog</a></li>
+            <li><a href="../gallery.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar py-2">
+      <div class="container-fluid container-xl">
+        <div class="announcement-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "effect": "slide",
+              "direction": "vertical"
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+            <div class="swiper-slide">💰 30 days money back guarantee</div>
+            <div class="swiper-slide">🎁 20% off on your first order - Use code: FIRST20</div>
+            <div class="swiper-slide">⚡ Flash Sale! Up to 70% off on selected items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+  <main class="main">
+
+    <!-- Hero Image & Title -->
+    <section style="position: relative; padding-top: 100px; padding-bottom: 50px; background-color: #fcfcfc;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center" data-aos="fade-up">
+            <span
+              style="background: rgba(140,13,79,0.1); color: var(--accent-color); padding: 6px 15px; border-radius: 50px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Panduan
+              Acara</span>
+            <h1
+              style="color: var(--heading-color); font-weight: 800; font-size: clamp(32px, 5vw, 48px); margin: 25px 0; line-height: 1.2;">
+              Cara Memilih Seminar Kit Sesuai dengan Tema Acara Anda</h1>
+            <div
+              style="display: flex; align-items: center; justify-content: center; gap: 20px; color: #6c757d; font-size: 15px; margin-bottom: 40px;">
+              <span><i class="bi bi-person-circle me-2" style="font-size: 18px; color: var(--heading-color);"></i>
+                <strong>Event Specialist</strong></span>
+              <span><i class="bi bi-calendar-event me-2"></i> 28 September 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="100">
+            <div style="border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+              <!-- Gambar ke 1 (Atas/Hero) dalam rasio landscape -->
+              <img src="../assets/img/product/product-m-1.webp"
+                alt="Cara Memilih Seminar Kit Sesuai dengan Tema Acara Anda" class="img-fluid w-100"
+                style="aspect-ratio: 16/9; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 article-content" data-aos="fade-up">
+
+            <!-- Table of Contents (Collapsible) -->
+            <div class="toc-card">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;"
+                onclick="const el=document.getElementById('tocList'); const icon=document.getElementById('tocIcon'); if(el.style.display==='none'){el.style.display='block'; icon.classList.remove('bi-chevron-down'); icon.classList.add('bi-chevron-up');}else{el.style.display='none'; icon.classList.remove('bi-chevron-up'); icon.classList.add('bi-chevron-down');}">
+                <h4 style="font-size: 18px; font-weight: 700; color: var(--heading-color); margin-bottom: 0;">Daftar Isi
+                  (Table of Contents)</h4>
+                <i id="tocIcon" class="bi bi-chevron-up"
+                  style="font-size: 18px; color: var(--heading-color); transition: 0.3s;"></i>
+              </div>
+              <ul id="tocList" style="display: block; margin-top: 15px; overflow: hidden;">
+                <li><i class="bi bi-dash me-2" style="color: var(--accent-color);"></i><a href="#anggaran">Menyesuaikan
+                    dengan Anggaran</a></li>
+                <li><i class="bi bi-dash me-2" style="color: var(--accent-color);"></i><a
+                    href="#fungsionalitas">Mengutamakan Fungsionalitas</a></li>
+                <li><i class="bi bi-dash me-2" style="color: var(--accent-color);"></i><a href="#desain">Keselarasan
+                    Desain dan Tema</a></li>
+              </ul>
+            </div>
+
+
+            <p>Acara seminar tidak akan lengkap tanpa kehadiran tas spunbond dan blocknote. Memilih paket yang tepat
+              sering kali menjadi tantangan bagi para penyelenggara acara. Kami memiliki banyak variasi di <a
+                href="../seminar-kit.html" class="content-link">halaman Seminar Kit</a> yang dapat dipertimbangkan.</p>
+
+            <h3 id="anggaran">Menyesuaikan dengan Anggaran</h3>
+            <p>Hal pertama yang harus ditentukan adalah budget per peserta. Jika Anda menargetkan ratusan mahasiswa,
+              paket blocknote jilid spiral dan pulpen biasa sudah cukup representatif. Namun, untuk acara berskala
+              nasional, Anda mungkin butuh tas kanvas tebal.</p>
+
+            <div class="baca-juga">
+              <div
+                style="background: rgba(140,13,79,0.1); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--accent-color);">
+                <i class="bi bi-book-half"></i></div>
+              <div>
+                <span
+                  style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #888; font-weight: 700;">Baca
+                  Juga</span>
+                <br>
+                <a href="tren-souvenir-2026.html"
+                  style="color: var(--heading-color); font-weight: 700; font-size: 16px; text-decoration: none;">Tren
+                  Souvenir Kantor Eksklusif Paling Dicari Tahun 2026</a>
+              </div>
+            </div>
+
+            <h3 id="fungsionalitas">Mengutamakan Fungsionalitas</h3>
+            <!-- Gambar ke 2 di bagian teks -->
+            <img src="../assets/img/product/product-f-1.webp" alt="Tas Kanvas Custom" class="article-image">
+            <p>Pastikan item yang Anda berikan bisa dipakai kembali oleh peserta di kemudian hari, misalnya tas punggung
+              atau lanyard tebal. Ini akan memperpanjang masa hidup promosi logo Anda.</p>
+
+            <h3 id="desain">Keselarasan Desain dan Tema</h3>
+            <p>Sesuaikan warna dan jenis material dengan audiens Anda. Acara medis mungkin cocok dengan desain bersih
+              dan putih, sementara pameran startup lebih pas menggunakan warna-warna berani dan nyentrik.</p>
+
+
+            <!-- Tags & Share -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 pt-4 border-top">
+              <div class="mb-3 mb-md-0">
+                <span class="badge bg-light text-dark border px-3 py-2 me-2" style="font-size: 13px;">#Souvenir</span>
+                <span class="badge bg-light text-dark border px-3 py-2 me-2" style="font-size: 13px;">#Corporate</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-circle"
+                  style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-circle"
+                  style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i
+                    class="bi bi-twitter-x"></i></a>
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-circle"
+                  style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i
+                    class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+
+            <!-- Author Profile -->
+            <div class="mt-5 p-4"
+              style="background: #fdfafb; border: 1px solid rgba(140,13,79,0.1); border-radius: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 25px;">
+              <div
+                style="width: 80px; height: 80px; border-radius: 50%; background: var(--accent-color); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 36px; flex-shrink: 0; box-shadow: 0 10px 20px rgba(140,13,79,0.2);">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                <span
+                  style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px;">Tentang
+                  Penulis</span>
+                <h5 style="margin: 5px 0 10px; font-weight: 800; color: var(--heading-color); font-size: 20px;">Event
+                  Specialist</h5>
+                <p style="margin: 0; color: var(--ss-text); font-size: 15px; line-height: 1.6;">Spesialis pengadaan
+                  barang promosi dengan pengalaman lebih dari 5 tahun di industri kreatif. Berdedikasi membantu
+                  perusahaan merancang bingkisan yang relevan, fungsional, dan meninggalkan kesan mendalam.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="section py-5" style="background-color: #f9f9f9;">
+      <div class="container">
+        <h3
+          style="color: var(--heading-color); font-weight: 800; font-size: 28px; margin-bottom: 40px; text-align: center;">
+          Artikel Terkait Lainnya</h3>
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div
+              style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; display: flex; flex-direction: column; transition: 0.4s; border: 1px solid rgba(0,0,0,0.05);">
+              <div style="position: relative; overflow: hidden; aspect-ratio: 16/10;">
+                <a href="tren-souvenir-2026.html">
+                  <img src="../assets/img/product/product-f-5.webp"
+                    alt="Tren Souvenir Kantor Eksklusif Paling Dicari Tahun 2026" class="w-100 h-100"
+                    style="object-fit: cover; transition: 0.5s;" onmouseover="this.style.transform='scale(1.1)';"
+                    onmouseout="this.style.transform='scale(1)';">
+                </a>
+              </div>
+              <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                <div style="font-size: 12px; color: #888; margin-bottom: 10px;">04 Oktober 2026</div>
+                <h5
+                  style="font-size: 18px; font-weight: 700; color: var(--heading-color); line-height: 1.4; margin-bottom: 10px;">
+                  <a href="tren-souvenir-2026.html" class="blog-title-link">Tren Souvenir Kantor Eksklusif Paling Dicari
+                    Tahun 2026</a></h5>
+                <p style="color: var(--ss-text); font-size: 14px; line-height: 1.5; margin-bottom: 15px; flex-grow: 1;">
+                  Temukan barang-barang inovatif yang paling dicari untuk dijadikan corporate gift VIP tahun depan demi
+                  mempertahankan relasi bisnis.</p>
+                <a href="tren-souvenir-2026.html"
+                  style="margin-top: auto; color: var(--accent-color); font-size: 14px; font-weight: 700; text-decoration: none;">Baca
+                  Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div
+              style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; display: flex; flex-direction: column; transition: 0.4s; border: 1px solid rgba(0,0,0,0.05);">
+              <div style="position: relative; overflow: hidden; aspect-ratio: 16/10;">
+                <a href="pentingnya-corporate-gift.html">
+                  <img src="../assets/img/product/product-f-2.webp"
+                    alt="Mengapa Corporate Gift Penting untuk Menjaga Relasi Bisnis?" class="w-100 h-100"
+                    style="object-fit: cover; transition: 0.5s;" onmouseover="this.style.transform='scale(1.1)';"
+                    onmouseout="this.style.transform='scale(1)';">
+                </a>
+              </div>
+              <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                <div style="font-size: 12px; color: #888; margin-bottom: 10px;">15 September 2026</div>
+                <h5
+                  style="font-size: 18px; font-weight: 700; color: var(--heading-color); line-height: 1.4; margin-bottom: 10px;">
+                  <a href="pentingnya-corporate-gift.html" class="blog-title-link">Mengapa Corporate Gift Penting untuk
+                    Menjaga Relasi Bisnis?</a></h5>
+                <p style="color: var(--ss-text); font-size: 14px; line-height: 1.5; margin-bottom: 15px; flex-grow: 1;">
+                  Memberikan hadiah perusahaan bukan sekadar formalitas, melainkan investasi emosional jangka panjang
+                  untuk mempertahankan loyalitas.</p>
+                <a href="pentingnya-corporate-gift.html"
+                  style="margin-top: auto; color: var(--accent-color); font-size: 14px; font-weight: 700; text-decoration: none;">Baca
+                  Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div
+              style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; display: flex; flex-direction: column; transition: 0.4s; border: 1px solid rgba(0,0,0,0.05);">
+              <div style="position: relative; overflow: hidden; aspect-ratio: 16/10;">
+                <a href="ide-hampers-onboarding.html">
+                  <img src="../assets/img/product/product-m-12.webp"
+                    alt="Ide Hampers Unik untuk Menyambut Karyawan Baru (Onboarding Kit)" class="w-100 h-100"
+                    style="object-fit: cover; transition: 0.5s;" onmouseover="this.style.transform='scale(1.1)';"
+                    onmouseout="this.style.transform='scale(1)';">
+                </a>
+              </div>
+              <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                <div style="font-size: 12px; color: #888; margin-bottom: 10px;">02 September 2026</div>
+                <h5
+                  style="font-size: 18px; font-weight: 700; color: var(--heading-color); line-height: 1.4; margin-bottom: 10px;">
+                  <a href="ide-hampers-onboarding.html" class="blog-title-link">Ide Hampers Unik untuk Menyambut
+                    Karyawan Baru (Onboarding Kit)</a></h5>
+                <p style="color: var(--ss-text); font-size: 14px; line-height: 1.5; margin-bottom: 15px; flex-grow: 1;">
+                  Sambut karyawan baru Anda dengan Onboarding Kit yang mengesankan. Temukan ide isi hampers mulai dari
+                  hoodie hingga botol kekinian.</p>
+                <a href="ide-hampers-onboarding.html"
+                  style="margin-top: auto; color: var(--accent-color); font-size: 14px; font-weight: 700; text-decoration: none;">Baca
+                  Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="..//" class="logo"><img src="../assets/img/logo.webp" alt="Logo"></a>
+              <p>Kami menyediakan seminar kit, souvenir kantor, corporate gift, merchandise, dan hampers berkualitas
+                untuk perusahaan Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Ikuti Kami</h5>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                  <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Produk</h4>
+              <ul class="footer-links">
+                <li><a href="../seminar-kit.html">Seminar Kit</a></li>
+                <li><a href="../souvenir-kantor.html">Souvenir Kantor</a></li>
+                <li><a href="../corporate-gift.html">Corporate Gift</a></li>
+                <li><a href="../merchandise.html">Merchandise</a></li>
+                <li><a href="../hampers.html">Hampers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Bantuan</h4>
+              <ul class="footer-links">
+                <li><a href="../about.html">Tentang Kami</a></li>
+                <li><a href="../services.html">Layanan</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="../contact.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Informasi Kontak</h4>
+              <div class="footer-contact">
+                <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Jl. Contoh No. 123, Jakarta,
+                    Indonesia</span></div>
+                <div class="contact-item"><i class="bi bi-telephone"></i><span><a href="https://wa.me/628898964355"
+                      target="_blank" rel="noopener">+62 889-8964-355</a></span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>halo@contoh.com</span></div>
+                <div class="contact-item"><i class="bi bi-clock"></i><span>Senin-Jumat: 09.00-17.00<br>Sabtu:
+                    09.00-14.00<br>Minggu: Libur</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Hak Cipta</span> <strong class="sitename">Seminar &amp; Souvenir</strong>. Seluruh hak
+                dilindungi.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+              <div class="legal-links">
+                <a href="../tos.html">Syarat &amp; Ketentuan</a>
+                <a href="../privacy.html">Kebijakan Privasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/628898964355" class="wa-float d-flex align-items-center justify-content-center" target="_blank"
+    rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/store.js"></script>
+</body>
+
+</html>
